@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="magStyle.css">
+		<script src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.6.0/twilio-flex-webchat.min.js" integrity="sha512-E1OX3Cyq3KaDo4WM6fITGRv2eiGQbK40AJxNdsvC6BRxkUGp7f4RchZeOAVXHTTA3+4KjSeZDJB1cFpikR5EVw==" crossorigin></script>
 	</head>
 	<body> 
 		<h1>
@@ -9,5 +10,13 @@
 		Protection<br>
 		Hotline
 		</h1>
+		
+		 <script>
+            	const appConfig = {
+                accountSid:"AC30541c5691dc185a9ae3c15524ae23d6",
+                flexFlowSid:"FO6ed2d8e15ed7e52373073d2141288251"
+            	};
+            	Twilio.FlexWebChat.renderWebChat(appConfig);
+        </script>
 	</body>
 </html>
