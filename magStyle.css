@@ -1,0 +1,28 @@
+body {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: .9;
+
+  background-color: #ffffff;
+  color: #333333;
+}
+
+html {
+  border: 10px solid #ffdc00;
+}
+
+h1 {
+	 margin: 18px 0 0 0;
+	 position: absolute;
+  top:  25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 81px;
+}
+
+@media (max-width: 450px) {
+  h1 {
+	margin: 4vw 0 0 0;
+	font-size: 18vw;
+  }
+}
