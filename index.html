@@ -12,6 +12,7 @@
 		<meta property="og:image" content="https://www.outvoters.org/img.png" />
 		<script src="https://assets.flex.twilio.com/releases/flex-webchat-ui/2.6.0/twilio-flex-webchat.min.js" integrity="sha512-E1OX3Cyq3KaDo4WM6fITGRv2eiGQbK40AJxNdsvC6BRxkUGp7f4RchZeOAVXHTTA3+4KjSeZDJB1cFpikR5EVw==" crossorigin></script>
 	</head>
+	<script src="//rum-static.pingdom.net/pa-5f9f499168ed1100130001ad.js" async></script>
 	<body> 
 		<h1>
 		Trans<br>
@@ -22,7 +23,7 @@
 		
 		<a class="big" href="about.html">about</a>
 		
-		 		 <script>
+		<script>
             	const appConfig = {
                 accountSid:"AC30541c5691dc185a9ae3c15524ae23d6",
                 flexFlowSid:"FO6ed2d8e15ed7e52373073d2141288251"
@@ -35,10 +36,8 @@
 				Twilio.FlexWebChat.MessagingCanvas.defaultProps.showWelcomeMessage = false;
 				Twilio.FlexWebChat.createWebChat(appConfig).then(webchat => {
 					const { manager } = webchat;
-					
-					manager.strings.WelcomeMessage = "New text for welcome message";
 					webchat.init();
 				});
-        </script>
+        	</script>
 	</body>
 </html>
