@@ -22,21 +22,6 @@
 		
 		<a class="big" href="about.html">about</a>
 		
-		<script>
-            	const appConfig = {
-                accountSid:"AC30541c5691dc185a9ae3c15524ae23d6",
-                flexFlowSid:"FO6ed2d8e15ed7e52373073d2141288251"
-            	};
-				Twilio.FlexWebChat.EntryPoint.defaultProps.tagline = "Message Us"; 
-				Twilio.FlexWebChat.MainHeader.defaultProps.titleText = "Messages";
-				Twilio.FlexWebChat.MainHeader.defaultProps.showImage = false;
-				Twilio.FlexWebChat.MessagingCanvas.defaultProps.messageStyle = "Squared";   
-				Twilio.FlexWebChat.MessagingCanvas.defaultProps.predefinedMessage = false;
-				Twilio.FlexWebChat.MessagingCanvas.defaultProps.showWelcomeMessage = false;
-				Twilio.FlexWebChat.createWebChat(appConfig).then(webchat => {
-					const { manager } = webchat;
-					webchat.init();
-				});
-        	</script>
+		
 	</body>
 </html>
